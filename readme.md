@@ -27,7 +27,7 @@ Response:
 ### Water tank Level 
 /api/v1/mailchimp/list - GET
 
-REsponse:
+Response:
 
 ```shell
 {
