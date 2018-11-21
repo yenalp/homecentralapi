@@ -22,7 +22,7 @@ app.use(cors());
 
 
 // return the outside temp
-app.get('/outside-temp', (req, res) => {
+app.get('/api/v1/outside-temp', (req, res) => {
     let  selectTemp = 'Select * from outdoor_temperatures order by id desc limit 1';
     con.query(selectTemp, (err, result) => {
         if (err) {
@@ -36,7 +36,7 @@ app.get('/outside-temp', (req, res) => {
 });
 
 // return the water level
-app.get('/water-level', (req, res) => {
+app.get('/api/v1/water-level', (req, res) => {
     let  selectTemp = 'Select * from water_pressures order by id desc limit 1';
     con.query(selectTemp, (err, result) => {
         if (err) {
